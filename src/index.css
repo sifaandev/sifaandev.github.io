@@ -1,0 +1,45 @@
+ @import "tailwindcss";
+
+:root {
+  --bg: #f8fafc;
+  --text: #2d2639;
+  --textPurple: #9810fa;
+}
+
+.dark {
+  --bg: #110720;
+  --text: #e0f2fe;
+  --textPurple: #c27aff;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("@/assets/fonts/Nunito-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("@/assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+h1, h2, strong, button, div > a {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.25px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
