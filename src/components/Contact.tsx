@@ -130,27 +130,27 @@ export default function Contact({isDark}: {isDark:boolean}) {
 
     setLoading(true)
 
-      if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-          toast.error("Email service is not configured yet");
-          setLoading(false);
-          return;
-      }
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+        toast.error("Email service is not configured yet");
+        setLoading(false);
+        return;
+    }
       
-      emailjs.sendForm(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        emailRef.current!,
-        PUBLIC_KEY
-      )
-      .then(() => {
-        toast.success("Thanks for contacting me. I’ll respond soon")
-        setForm({name: "", email: "", location: "", message: ""});
-        setLoading(false)
-      })
-      .catch(() => {
-        toast.error("Oops! Something went wrong. You can contact me via social media")
-        setLoading(false)
-      });
+    emailjs.sendForm(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      emailRef.current!,
+      PUBLIC_KEY
+    )
+    .then(() => {
+      toast.success("Thanks for contacting me. I’ll respond soon")
+      setForm({name: "", email: "", location: "", message: ""});
+      setLoading(false)
+    })
+    .catch(() => {
+      toast.error("Oops! Something went wrong. You can contact me via social media")
+      setLoading(false)
+    });
   };
 
   return (
