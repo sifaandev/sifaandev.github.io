@@ -1,50 +1,12 @@
 export default function Project({isDark}: {isDark: boolean}) {
   const projects = [
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio built with React and Tailwind",
+      title: "Todo-App",
+      description: "Todo App with filters, dark mode & persistent storage",
       tech: ["React", "Tailwind", "TypeScript"],
       image: "/project-1.png",
-      live: "#",
-      github: "#"
-    },
-    {
-      title: "Task Manager",
-      description: "A simple task manager with filter & state handling",
-      tech: ["React", "Redux"],
-      image: "/project-2.png",
-      live: "#",
-      github: "#"
-    },
-    {
-      title: "Task Manager",
-      description: "A simple task manager with filter & state handling",
-      tech: ["React", "Redux"],
-      image: "/project-2.png",
-      live: "#",
-      github: "#"
-    },
-    {
-      title: "Task Manager",
-      description: "A simple task manager with filter & state handling",
-      tech: ["React", "Redux"],
-      image: "/project-2.png",
-      live: "#",
-      github: "#"
-    },{
-      title: "Task Manager",
-      description: "A simple task manager with filter & state handling",
-      tech: ["React", "Redux"],
-      image: "/project-2.png",
-      live: "#",
-      github: "#"
-    },{
-      title: "Task Manager",
-      description: "A simple task manager with filter & state handling",
-      tech: ["React", "Redux"],
-      image: "/project-2.png",
-      live: "#",
-      github: "#"
+      live: "https://sifaandev.github.io/todoflex",
+      github: "https://github.com/sifaandev/todoflex"
     },
   ];
 
@@ -78,3 +40,4 @@ export default function Project({isDark}: {isDark: boolean}) {
     </div>
   );
 }
+
