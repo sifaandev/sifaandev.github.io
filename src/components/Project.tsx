@@ -4,7 +4,7 @@ export default function Project({isDark}: {isDark: boolean}) {
       title: "Todo-App",
       description: "Todo App with filters, dark mode & persistent storage",
       tech: ["React", "Tailwind", "TypeScript"],
-      image: "/todo-app.png",
+      image: "/todo-app.jpg",
       live: "https://sifaandev.github.io/todoflex",
       github: "https://github.com/sifaandev/todoflex"
     },{
@@ -68,3 +68,4 @@ export default function Project({isDark}: {isDark: boolean}) {
     </div>
   );
 }
+
