@@ -122,6 +122,12 @@ export default function Contact({isDark}: {isDark:boolean}) {
     const SERVICE_ID = import.meta.env.VITE_SERVICE_ID || '';
     const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID || '';
     const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY || '';
+
+    console.log("EMAIL ENV CHECK", {
+      SERVICE: import.meta.env.VITE_SERVICE_ID,
+      TEMPLATE: import.meta.env.VITE_TEMPLATE_ID,
+      PUBLIC: import.meta.env.VITE_PUBLIC_KEY
+    });
     
     if (!name || !email || !message) {
       toast.error("Please fill in all required fields");
@@ -250,3 +256,4 @@ export default function Contact({isDark}: {isDark:boolean}) {
     </div>
   );
 }
+
