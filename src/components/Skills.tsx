@@ -2,28 +2,28 @@ import React from 'react';
 
 export default function Skills({ isDark }: { isDark: boolean }) {
    const techSkills = [
-    { name: 'HTML', icon: "html", category: "frontend" },
-    { name: 'CSS', icon: "css", category: "frontend" },
-    { name: 'JavaScript', icon: "javascript", category: "frontend" },
-    { name: 'React', icon: "react", category: "frontend" },
-    { name: 'TypeScript', icon: "typescript", category: "frontend" },
-    { name: 'Next.js', icon: "next", category: "fullstack" },
-    { name: 'Bootstrap', icon: "bootstrap", category: "frontend" },
-    { name: 'Tailwind', icon: "tailwindcss", category: "frontend" },
-    { name: 'React Native', icon: "react", category: "mobile" },
-    { name: 'Node.js', icon: "node", category: "backend" },
-    { name: 'Express', icon: "express", category: "backend" },
-    { name: 'MongoDB', icon: "mongodb", category: "database" },
-    { name: 'Authentication', icon: "authentication", category: "bakend" },
-    { name: 'REST APIs', icon: "rest-api", category: "backend" },
+    { name: 'HTML', icon: "/html.png", category: "frontend" },
+    { name: 'CSS', icon: "/css.png", category: "frontend" },
+    { name: 'JavaScript', icon: "/javascript.png", category: "frontend" },
+    { name: 'React', icon: "/react.png", category: "frontend" },
+    { name: 'TypeScript', icon: "/typescript.png", category: "frontend" },
+    { name: 'Next.js', icon: "/next.png", category: "fullstack" },
+    { name: 'Bootstrap', icon: "/bootstrap.png", category: "frontend" },
+    { name: 'Tailwind', icon: "/tailwindcss.png", category: "frontend" },
+    { name: 'React Native', icon: "/react.png", category: "mobile" },
+    { name: 'Node.js', icon: "/node.png", category: "backend" },
+    { name: 'Express', icon: "/express.png", category: "backend" },
+    { name: 'MongoDB', icon: "/mongodb.png", category: "database" },
+    { name: 'Authentication', icon: "/authentication.png", category: "bakend" },
+    { name: 'REST APIs', icon: "/rest-api.png", category: "backend" },
   ];
 
   const toolSkills = [
-    { name: 'Git', icon: "git" },
-    { name: 'Sublime', icon: "sublime" },
-    { name: 'VS Code', icon: "vs-code" },
-    { name: 'Figma', icon: "figma" },
-    { name: 'Postman', icon: "postman" }
+    { name: 'Git', icon: "/git.png" },
+    { name: 'Sublime', icon: "/sublime.png" },
+    { name: 'VS Code', icon: "/vs-code.png" },
+    { name: 'Figma', icon: "/figma.png" },
+    { name: 'Postman', icon: "/postman.png" }
   ];
 
   const categories = [
@@ -47,7 +47,7 @@ export default function Skills({ isDark }: { isDark: boolean }) {
             <div key={index} className="flex justify-center items-center">
               <span className="text-xl text-gray-400 -mr-1">•</span>
               <div className="w-12 flex justify-center items-center overflow-hidden">
-                <img src={`/${item.icon}.png`} alt={item.name} className="p-3" />
+                <img src={item.icon} alt={item.name} className="p-3" />
               </div>
               <span className={`text-sm text-center leading-relaxed md:leading-loose tracking-wide md:tracking-normal ${isDark ? "text-white" : "text-black"} break-words -ml-1`}>{item.name}</span>
             </div>
@@ -61,7 +61,7 @@ export default function Skills({ isDark }: { isDark: boolean }) {
           <div key={index} className={`flex justify-center items-center`}>
             <span className="text-xl text-gray-400 -mr-1">•</span>
             <div className="w-12 flex justify-center items-center overflow-hidden">
-              <img src={`/${item.icon}.png`} alt={item.name} className="p-3" />
+              <img src={item.icon} alt={item.name} className="p-3" />
             </div>
             <span className={`text-sm text-center leading-relaxed md:leading-loose tracking-wide md:tracking-normal ${isDark ? "text-white" : "text-black"} break-words -ml-1`}>{item.name}</span>
           </div>
