@@ -4,7 +4,7 @@ export default function Project({isDark}: {isDark: boolean}) {
       title: "Todo-App",
       description: "Todo App with filters, dark mode & persistent storage",
       tech: ["React", "Tailwind", "TypeScript"],
-      image: "/todo-app.jpg",
+      image: "/todo-app.png",
       live: "https://sifaandev.github.io/todoflex",
       github: "https://github.com/sifaandev/todoflex"
     },{
@@ -45,8 +45,8 @@ export default function Project({isDark}: {isDark: boolean}) {
       </p>
       <div className="flex flex-wrap sm:grid sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
         {projects.map((item, index) => 
-          <div key={index} className={`flex w-full p-5 flex-col gap-4 rounded-2xl overflow-hidden transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0px_10px_50px_-15px_rgba(147,51,234,0.25)] border hover:border-purple-400 ${isDark ? "border-[#2a1b3d] bg-[#1a0f2d] hover:border-purple-500 hover:shadow-[0_0_30px_-10px_rgba(168,85,247,0.5)]" : "border-[#e5e7eb] bg-white hover:border-pink-500"}`}>
-            <div className="h-52 relative overflow-hidden rounded-lg">
+          <div key={index} className={`flex w-full p-4 flex-col gap-4 rounded-2xl overflow-hidden transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0px_10px_50px_-15px_rgba(147,51,234,0.25)] border hover:border-purple-400 ${isDark ? "border-[#2a1b3d] bg-[#1a0f2d] hover:border-purple-500 hover:shadow-[0_0_30px_-10px_rgba(168,85,247,0.5)]" : "border-[#e5e7eb] bg-white hover:border-pink-500"}`}>
+            <div className={`h-52 relative overflow-hidden rounded-2xl border ${isDark ? "border-[#2a1b3d]" : "border-[#e5e7eb]"}`}>
               <div className="h-full flex items-center justify-center">
                 <img src={item.image} alt={item.title} />
               </div>
@@ -68,4 +68,3 @@ export default function Project({isDark}: {isDark: boolean}) {
     </div>
   );
 }
-
