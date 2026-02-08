@@ -3,13 +3,11 @@
 :root {
   --bg: #f8fafc;
   --text: #2d2639;
-  --textPurple: #9810fa;
 }
 
 .dark {
   --bg: #110720;
   --text: #e0f2fe;
-  --textPurple: #c27aff;
 }
 
 @font-face {
