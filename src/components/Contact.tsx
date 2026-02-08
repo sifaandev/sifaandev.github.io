@@ -164,7 +164,7 @@ export default function Contact({isDark}: {isDark:boolean}) {
               <div className={`p-3 rounded-full transition-colors duration-300 ${isDark ? "bg-[#1a0f2d] group-hover:bg-violet-900/30" : "bg-violet-500/10 group-hover:bg-violet-500/20"}`}>{item.icon}</div>
               <div>
                 <p className={`text-lg font-medium leading-tight ${isDark ? "text-white" : "text-black"}`}>{item.title}</p>
-                <p className="mt-1">{item.value}</p>
+                <p className="mt-1 opacity-75">{item.value}</p>
               </div>
             </div>
           )}
@@ -181,18 +181,18 @@ export default function Contact({isDark}: {isDark:boolean}) {
           <div className="flex flex-wrap sm:grid sm:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6">
             <div className="flex-1 flex flex-col gap-2">
               <label htmlFor="name" className={`font-medium tracking-wider ${isDark ? "text-white" : "text-black"}`}>NAME</label>
-              <input required type="text" name="name" value={form.name} onChange={(e) => handleChange(e.target.name as keyof FormState, e.target.value)} placeholder="Your name" className={`bg-transparent px-3 outline-none border-b py-2 transition-all duration-300 focus:border-violet-500 ${isDark ? "border-white/10 placeholder:text-gray-500 text-white" : "border-black/10 placeholder:text-gray-400 text-black"}`} />
+              <input required type="text" name="name" value={form.name} onChange={(e) => handleChange(e.target.name as keyof FormState, e.target.value)} placeholder="Your name" className={`px-3 outline-none border-b py-2 transition-all duration-300 focus:border-violet-500 placeholder:opacity-75 ${isDark ? "border-white/10 text-white placeholder:text-[#b7cfe6]" : "border-black/10 text-black placeholder:text-[#2d2639]"}`} />
             </div>  
 
             <div className="flex-1 flex flex-col gap-2">
               <label htmlFor="email" className={`font-medium tracking-wider ${isDark ? "text-white" : "text-black"}`}>EMAIL</label>
-              <input required type="email" name="email" value={form.email} onChange={(e) => handleChange(e.target.name as keyof FormState, e.target.value)} placeholder="your@email.com" className={`bg-transparent px-3 outline-none border-b py-2 transition-all duration-300 focus:border-violet-500 ${isDark ? "border-white/10 placeholder:text-gray-500 text-white" : "border-black/10 placeholder:text-gray-400 text-black"}`} />
+              <input required type="email" name="email" value={form.email} onChange={(e) => handleChange(e.target.name as keyof FormState, e.target.value)} placeholder="your@email.com" className={`px-3 outline-none border-b py-2 transition-all duration-300 focus:border-violet-500 placeholder:opacity-75 ${isDark ? "border-white/10 text-white placeholder:text-[#b7cfe6]" : "border-black/10 text-black placeholder:text-[#2d2639]"}`} />
             </div> 
           </div>
 
           <div className="flex flex-col gap-2">
             <label htmlFor="location" className={`font-medium tracking-wider ${isDark ? "text-white" : "text-black"}`}>LOCATION</label>
-            <input type="text" name="location" value={form.location} onChange={(e) => handleChange(e.target.name as keyof FormState, e.target.value)} placeholder="City, Country" className={`bg-transparent px-3 outline-none border-b py-2 transition-all duration-300 focus:border-violet-500 ${isDark ? "border-white/10 placeholder:text-gray-500 text-white" : "border-black/10 placeholder:text-gray-400 text-black"}`} />
+            <input type="text" name="location" value={form.location} onChange={(e) => handleChange(e.target.name as keyof FormState, e.target.value)} placeholder="City, Country" className={`px-3 outline-none border-b py-2 transition-all duration-300 focus:border-violet-500 placeholder:opacity-75 ${isDark ? "border-white/10 text-white placeholder:text-[#b7cfe6]" : "border-black/10 text-black placeholder:text-[#2d2639]"}`} />
           </div> 
 
           <div className="flex flex-col gap-2">
@@ -203,10 +203,10 @@ export default function Contact({isDark}: {isDark:boolean}) {
               value={form.message}
               onChange={(e) => handleChange(e.target.name as keyof FormState, e.target.value)}
               required
-              className={`w-full px-4 py-3 rounded-xl border transition-all duration-300 resize-none outline-none ${
+              className={`w-full px-4 py-3 rounded-xl border transition-all duration-300 resize-none outline-none placeholder:opacity-75 ${
                 isDark
-                  ? 'placeholder:text-gray-500 border-white/5 focus:border-violet-500 focus:shadow-[0_0_20px_rgba(139,92,246,0.15)] text-white'
-                  : 'placeholder:text-gray-400 border-black/5 focus:border-violet-500 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] text-black'
+                  ? 'border-white/5 placeholder:text-[#b7cfe6] focus:border-violet-500 focus:shadow-[0_0_20px_rgba(139,92,246,0.15)] text-white'
+                  : 'border-black/5 placeholder:text-[#2d2639] focus:border-violet-500 focus:shadow-[0_0_20px_rgba(139,92,246,0.1)] text-black'
               }`}
               placeholder="Share your ideas, project details, or questions with me..."
             />
@@ -250,5 +250,3 @@ export default function Contact({isDark}: {isDark:boolean}) {
     </div>
   );
 }
-
-
