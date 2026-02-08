@@ -18,7 +18,7 @@ export default function Hero({isDark}: HeroProps) {
           I'm a full stack and react native developer who turns ideas into clean, fast and reliable digital products that deliver real value
         </span>
 
-        <div className={`mb-6 md:mb-7 flex flex-wrap gap-4 w-fit px-5 py-3 rounded-xl items-center shadow-sm md:shadow-md border-0 md:border ${isDark ? "border-[#2a1b3d] bg-[#1a0f2d]" : "border-[#e5e7eb] bg-white"}`}>
+        <div className={`mb-6 md:mb-7 flex flex-wrap gap-4 w-fit px-5 py-3 rounded-xl items-center border ${isDark ? "border-[#2a1b3d] bg-[#1a0f2d]" : "border-[#e5e7eb] bg-white"}`}>
           <div className="text-center">
             <p className={`text-left text-3xl font-bold ${isDark ? "text-purple-500" : "text-purple-600"}`}>1+</p>
             <p className={`text-sm md:text-base leading-relaxed md:leading-loose tracking-wide md:tracking-normal font-medium`}>Year Experience</p>
@@ -40,7 +40,7 @@ export default function Hero({isDark}: HeroProps) {
         </div>
       </div>
 
-      <div className={`mb-8 md:my-6 rounded-3xl shadow-sm md:shadow-md overflow-hidden border-0 md:border ${isDark ? "border-[#2a1b3d] bg-[#1a0f2d]" : "border-[#e5e7eb] md:border-pink-500/35 bg-white"}`}>
+      <div className={`mb-8 md:my-6 rounded-3xl overflow-hidden border ${isDark ? "border-[#2a1b3d] bg-[#1a0f2d]" : "border-[#e5e7eb] bg-white"}`}>
         <div className="w-72 h-72 md:w-80 md:h-80 -mr-1">
           <img 
             src="/me.png" 
