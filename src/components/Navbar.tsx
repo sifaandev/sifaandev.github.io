@@ -83,7 +83,7 @@ export default function Navbar({isDark, setIsDark, openMenu, setOpenMenu}: Navba
             <li key={link.id}>
               <a 
                 href={link.href}
-                className={`flex justify-center items-center px-4 py-2.5 rounded-lg transition-all duration-300 ${activeSection === link.id ? isDark ? "bg-white text-black" : "bg-black text-white": isDark ? "text-white hover:bg-white/20" : "text-black hover:bg-black/15"}`}>
+                className={`flex justify-center items-center px-4 py-2.5 rounded-lg transition-all duration-300 ${activeSection === link.id ? "bg-purple-500 text-white" : "hover:opacity-75"}`}>
                   {link.name}
               </a>
             </li>
