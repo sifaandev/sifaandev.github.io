@@ -2,7 +2,7 @@ export default function Project({isDark}: {isDark: boolean}) {
   const projects = [
     {
       title: "Todoflex",
-      description: "Todo App with filters, apperance & persistent storage",
+      description: "A minimal todo app with search, filters, dark/light mode, and persistent task storage",
       tech: ["React", "Tailwind", "TypeScript"],
       image: "/todoflex.jpg",
       live: "https://sifaandev.github.io/todoflex",
@@ -40,4 +40,5 @@ export default function Project({isDark}: {isDark: boolean}) {
     </div>
   );
 }
+
 
