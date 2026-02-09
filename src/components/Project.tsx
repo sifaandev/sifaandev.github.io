@@ -1,38 +1,10 @@
 export default function Project({isDark}: {isDark: boolean}) {
   const projects = [
     {
-      title: "Todo-App",
-      description: "Todo App with filters, dark mode & persistent storage",
+      title: "Todoflex",
+      description: "Todo App with filters, apperance & persistent storage",
       tech: ["React", "Tailwind", "TypeScript"],
-      image: "/todo-app.png",
-      live: "https://sifaandev.github.io/todoflex",
-      github: "https://github.com/sifaandev/todoflex"
-    },{
-      title: "Todo-App",
-      description: "Todo App with filters, dark mode & persistent storage",
-      tech: ["React", "Tailwind", "TypeScript"],
-      image: "/todo-app.png",
-      live: "https://sifaandev.github.io/todoflex",
-      github: "https://github.com/sifaandev/todoflex"
-    },{
-      title: "Todo-App",
-      description: "Todo App with filters, dark mode & persistent storage",
-      tech: ["React", "Tailwind", "TypeScript"],
-      image: "/todo-app.png",
-      live: "https://sifaandev.github.io/todoflex",
-      github: "https://github.com/sifaandev/todoflex"
-    },{
-      title: "Todo-App",
-      description: "Todo App with filters, dark mode & persistent storage",
-      tech: ["React", "Tailwind", "TypeScript"],
-      image: "/todo-app.png",
-      live: "https://sifaandev.github.io/todoflex",
-      github: "https://github.com/sifaandev/todoflex"
-    },{
-      title: "Todo-App",
-      description: "Todo App with filters, dark mode & persistent storage",
-      tech: ["React", "Tailwind", "TypeScript"],
-      image: "/todo-app.png",
+      image: "/todoflex.jpg",
       live: "https://sifaandev.github.io/todoflex",
       github: "https://github.com/sifaandev/todoflex"
     },
@@ -68,3 +40,4 @@ export default function Project({isDark}: {isDark: boolean}) {
     </div>
   );
 }
+
